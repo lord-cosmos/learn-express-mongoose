@@ -3,7 +3,7 @@ var mongoose = require("mongoose");
 var Schema = mongoose.Schema;
 
 var BookSchema = new Schema({
-  title: { type: String, required: true, maxLength: 100 },
+  title: { type: String, required: true },
   author: { type: Schema.Types.ObjectId, ref: "Author", required: true },
   summary: { type: String, maxLength: 100, required: True },
   ISBN: { type: String, required: true },
