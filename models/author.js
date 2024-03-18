@@ -28,10 +28,10 @@ AuthorSchema.virtual("lifespan").get(function () {
   var date_form = "";
   if (this.date_of_birth || this.date_of_death) {
     date_form =
-      this.date_of_birth.getFullYear().toString() +
-      "-" +
-      this.date_of_death.getFullYear().toString();
-  } else if (!this.date_of_birth && !this.date_of_birth) {
+      (this.date_of_birth ? this.date_of_birth.getFullYear().toString() : "") +
+      "- " +
+      (this.date_of_death ? this.date_of_death.getFullYear().toString() : "");
+  } else {
     date_form = "-";
   }
   return date_form;
