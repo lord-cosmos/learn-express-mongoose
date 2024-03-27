@@ -61,7 +61,7 @@
           }
         } ],
         "rules" : [ {
-          "id" : "js/angular/disabling-sce",
+           "id" : "js/angular/disabling-sce",
           "name" : "js/angular/disabling-sce",
           "shortDescription" : {
             "text" : "Disabling SCE"
